@@ -9,12 +9,14 @@ function getDB(){
 function selectAll(req,res,next){
     const db = getDB()
     // console.log(req)
-    db.any("select * from marathon").then(data=>{
+    db.any("select * from marathon")
+    .then(data=>{
         res.status(200).json({
             status:200,
             data
         })
     })
+    console.log("hey brados")
 }
 
 
