@@ -1,0 +1,9 @@
+//conncet to table
+
+create table cis2012(
+    gender varchar(2),
+    attempted float,
+    passed float,
+    gpa floa,
+    year int,
+)
