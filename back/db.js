@@ -1,7 +1,7 @@
 var pgp = require('pg-promise')()
 const cn = {
   host: 'localhost',
-  port: 5432,
+  port: 5433,
   database: 'data_vis',
 }
 
