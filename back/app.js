@@ -5,6 +5,7 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var directoryRouter = require('./routes/directory');
 
 var app = express();
 
@@ -15,7 +16,7 @@ var allowCrossDomain = function(req, res, next) {
     next();
   }
   
-  app.use(allowCrossDomain);
+app.use(allowCrossDomain);
 
 app.use(logger('dev'));
 app.use(express.json());
@@ -25,5 +26,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/directory', directoryRouter)
 
 module.exports = app;

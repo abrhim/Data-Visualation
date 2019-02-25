@@ -9,6 +9,7 @@ const barchart = require("../queries/Barchart.js")
 router.get('/selectall',queries.selectAll)
 router.get('/sqlfun',queries.sqlfun)
 router.get('/barchart',barchart.query)
+router.get('/scatterplot',barchart.query)
 // router.get('/select',queries.selectAll)
 
 
